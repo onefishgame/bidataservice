@@ -1,7 +1,12 @@
 #BI Data Service
-Use update cutting edge technology to build a dynamic business intelligent web service to serve data analysis need including internal or external.  
+Use update cutting edge technology to build a dynamic business intelligent web service to serve data analysis need including internal or external. 
 
-It will provide dynamic, interactive and intuitable GUI rich web portal to help business executives  understand the meaning of data easily and precisely.
+We will try to build an intelligent data analysis and data reporting platform which facilitate target orintated marketing and sales 
+
+
+It should be highly dynamic, interactive and intuitable GUI rich web portal to help user  understand the meaning of historic data more easily and precisely.
+
+It will elinimate the confusion of multiple pages and multiple button navigation in traditional web application.
 
 
 
@@ -21,4 +26,18 @@ MongoDB is a free and open-source cross-platform document-oriented database. Cla
 ## Express
 [Express](https://expressjs.com/)
 Express is a free open source web application framework for Node.js. It is designed for building web applications and APIs. It is the de facto standard server framework for Node.js
+
+## Quick Instruction
+1. Install Node.JS
+
+2. Install MongoDB
+
+3. Start your MongoDB
+
+4. Seed Data
+mongoimport -d amx -c ccspendings --type csv --headerline --file seeddata.csv 
+
+5. Start Server
+npm start
+
 
