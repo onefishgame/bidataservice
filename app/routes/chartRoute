@@ -1,0 +1,14 @@
+var Transactions = require('../models/AmxDataViews');
+
+module.exports = function(app) {
+
+ app.get('/api/data', function(req, res) {
+  // use mongoose to get data
+  Transactions.find({}, {'_id': 0, 'state': 1, 'spending_type': 1, 'income_level': 1, 'date_posted': 1, 'total_spendings': 1, 'age_group': 1}, function(err, transactionsDetails) {
+ 
+   if (err) 
+   res.send(err);
+    res.json(transactionsDetails);
+  });
+ });
+}
